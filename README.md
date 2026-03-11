@@ -31,25 +31,24 @@ Built with a focus on **aesthetics**, **stability**, and **battery efficiency**.
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/walllinki.git
+    git clone https://github.com/happy77005/wallinki.git
     ```
 2.  **Open in Android Studio**:
     Make sure you have the latest version of Bumblebee or newer.
-3.  **Build & Run**:
-    Connect your device and click the "Run" button or use Gradle:
-    ```bash
-    ./gradlew assembleDebug
-    ```
-4.  **Set as Wallpaper**:
-    Once installed, open Walllinki, add your images, and tap **"Apply Dynamic Wallpaper"**. Follow the system prompts to set Walllinki as your Active Live Wallpaper.
 
 ---
 
-## 📸 Preview
+## 🏗️ Architecture
 
-| Home Screen | Image Selection |
-| :---: | :---: |
-| ![Header](C:/Users/harip/.gemini/antigravity/brain/8b1f10ef-5852-4934-af2b-96519a342a4a/walllinki_logo_1773060998597.png) | *(Add your screenshot here)* |
+Walllinki is built with a robust, modular architecture designed for performance and reliability:
+
+-   **UI Layer (Jetpack Compose)**: Utilizes modern declarative UI to provide a high-end Glassomorphic user experience. State management is handled with Compose's `remember` and `mutableState` to ensure a reactive interface.
+-   **Service Layer (Live Wallpaper Engine)**: A custom `DynamicWallpaperService` extending Android's `WallpaperService`. It handles the low-level lifecycle of a live wallpaper, including surface management and high-performance bitmap rendering centered on the canvas.
+-   **Background Layer (WorkManager)**: Employs a `PeriodicWorkRequest` to handle time-based triggers. This ensures that the wallpaper updates at the precise 6 AM and 6 PM milestones without requiring the app to be in the foreground, all whilst remaining battery-efficient.
+-   **Data & Persistence Layer**:
+    -   **SharedPreferences**: Stores user settings and chosen image URIs.
+    -   **kotlinx-serialization**: Serializes the complex `TimeSlot` data class (and its associated URIs) into JSON for robust persistent storage.
+    -   **Persistable URIs**: Implements secure media access by requesting long-term permissions for user-selected assets, ensuring the app retains access across device reboots.
 
 ---
 
