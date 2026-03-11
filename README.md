@@ -1,4 +1,4 @@
-# Walllinki 🎨 - Dynamic Harmony Wallpaper Engine
+# Walllinki - Dynamic Harmony Wallpaper Engine
 
 Walllinki is a premium Android application designed to bring life to your device's home screen. It automates wallpaper transitions based on the time of day, allowing you to curate different "moods" for your morning and evening routines.
 
@@ -6,17 +6,17 @@ Built with a focus on **aesthetics**, **stability**, and **battery efficiency**.
 
 ---
 
-## ✨ Features
+## Features
 
--   **🌅 Morning & Evening Slots**: Curate separate sets of wallpapers for the day (6 AM - 6 PM) and night (6 PM - 6 AM).
--   **💎 Glassomorphic UI**: A sleek, modern interface built with Jetpack Compose, featuring background blurs, gradients, and micro-animations.
--   **🔄 Dynamic Wallpaper Service**: A custom-built engine that renders your selected images as a Live Wallpaper.
--   **🔋 Battery Optimized**: Uses Android's `WorkManager` for background scheduling, ensuring minimal impact on battery life.
--   **🔐 Secure Access**: Leverages persistable URI permissions to access your photos locally without needing broad storage access.
+-   **Morning & Evening Slots**: Curate separate sets of wallpapers for the day (6 AM - 6 PM) and night (6 PM - 6 AM).
+-   **Glassomorphic UI**: A sleek, modern interface built with Jetpack Compose, featuring background blurs, gradients, and micro-animations.
+-   **Dynamic Wallpaper Service**: A custom-built engine that renders your selected images as a Live Wallpaper.
+-   **Battery Optimized**: Uses Android's `WorkManager` for background scheduling, ensuring minimal impact on battery life.
+-   **Secure Access**: Leverages persistable URI permissions to access your photos locally without needing broad storage access.
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 -   **Language**: Kotlin
 -   **UI**: Jetpack Compose (Material 3)
@@ -27,7 +27,7 @@ Built with a focus on **aesthetics**, **stability**, and **battery efficiency**.
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 1.  **Clone the repository**:
     ```bash
@@ -38,7 +38,7 @@ Built with a focus on **aesthetics**, **stability**, and **battery efficiency**.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 Walllinki is built with a robust, modular architecture designed for performance and reliability:
 
@@ -52,10 +52,10 @@ Walllinki is built with a robust, modular architecture designed for performance 
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-*Crafted with ❤️ for a better Android experience.*
+*Crafted for a better Android experience.*
