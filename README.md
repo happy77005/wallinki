@@ -6,6 +6,14 @@ Built with a focus on **aesthetics**, **stability**, and **battery efficiency**.
 
 ---
 
+## Download
+
+**[📥 Download Walllinki APK](walllinki-v1.0.apk)**
+
+*Note: You may need to enable "Install from Unknown Sources" on your Android device to install the APK.*
+
+---
+
 ## Features
 
 -   **Morning & Evening Slots**: Curate separate sets of wallpapers for the day (6 AM - 6 PM) and night (6 PM - 6 AM).
